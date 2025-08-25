@@ -208,3 +208,6 @@ __marimo__/
 
 # Training Data
 /data/
+
+# MacOS
+.DS_Store
