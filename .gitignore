@@ -216,3 +216,6 @@ __marimo__/
 .Icon?
 .Spotlight-V100
 .Trashes
+
+# Editors
+.vscode/
