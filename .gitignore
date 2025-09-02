@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 # Training Data
-/data/
+**/data/
 
 # macOS cruft
 .DS_Store
