@@ -1,9 +1,7 @@
 from huggingface_hub import hf_hub_download
 from pathlib import Path
 import zipfile
-
-REPO = "garythung/trashnet"
-FILE = "dataset-resized.zip"
+from config import *
 
 def fetch_trash_zip(dir_path = "data/raw"):
     """
@@ -12,6 +10,7 @@ def fetch_trash_zip(dir_path = "data/raw"):
     dest = Path(dir_path)
     dest.mkdir(parents=True, exist_ok=True)
 
+    print("Downloading TrashNet dataset...")
     zip_path = hf_hub_download(
         repo_id=REPO, 
         filename=FILE, 
@@ -19,7 +18,7 @@ def fetch_trash_zip(dir_path = "data/raw"):
         local_dir=dir_path,
         )
     print(f"Downloaded {zip_path}")
-    root = unzip_data(dest, zip_path)
+    unzip_data(dest, zip_path)
 
 def unzip_data(dest: Path, zip_path: str):
     """

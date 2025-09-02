@@ -1,2 +1,7 @@
-datasets
 pillow
+tensorflow>=2.15.0
+numpy
+pandas
+pillow
+huggingface_hub
+matplotlib

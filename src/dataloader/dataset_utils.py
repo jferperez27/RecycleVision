@@ -1,22 +1,17 @@
 import random
 from pathlib import Path
 import shutil
+from config import *
 
-TRAIN_RATIO = 0.8
-SEED = 42
-MOVE = False
-CLASSES = ["cardboard", "glass", "metal", "paper", "plastic", "trash"]
-DATA_DIR = Path("data/raw/dataset-resized")
-TRAIN_DIR = Path("data/processed/train")
-TEST_DIR = Path("data/processed/test")
 
 def split_dataset(data_dir=DATA_DIR, train_dir=TRAIN_DIR, test_dir=TEST_DIR, train_ratio=TRAIN_RATIO, seed=SEED, move=MOVE):
     """
     Splits dataset into training and testing sets for each class.
     """
+    print("Splitting dataset into training and testing sets...")
     rng = random.seed(seed)
 
-    for cls in CLASSES:
+    for cls in CLASS_NAMES:
         class_dir = data_dir / cls
         images = list(class_dir.glob("*"))
         random.shuffle(images)

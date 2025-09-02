@@ -209,5 +209,10 @@ __marimo__/
 # Training Data
 /data/
 
-# MacOS
+# macOS cruft
 .DS_Store
+**/.DS_Store
+._*
+.Icon?
+.Spotlight-V100
+.Trashes
