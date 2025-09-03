@@ -86,6 +86,9 @@ def run_inference():
     else:
         while True:
             image_path = input("Enter the path to the image file for inference (or 'exit' to return): ").strip()
+            if image_path == '':
+                print("Image path cannot be blank.")
+                return
             if image_path.lower() == 'exit':
                 break
             if not Path(image_path).exists():
