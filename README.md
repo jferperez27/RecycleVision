@@ -39,7 +39,7 @@ Start the REPL and type `help` for commands.
 Clone the project  
 
 ~~~bash  
-  git clone https://link-to-project
+  git clone https://github.com/jferperez27/RecycleVision.git
 ~~~
 
 Go to the project directory  
