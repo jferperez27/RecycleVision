@@ -12,3 +12,4 @@ MOVE = False
 DATA_DIR = Path("data/raw/dataset-resized")
 TRAIN_DIR = Path("data/processed/train")
 TEST_DIR = Path("data/processed/test")
+MODEL_NAME = "trash_classifier_model_v1.keras"
