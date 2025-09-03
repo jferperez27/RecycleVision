@@ -8,7 +8,7 @@ import random
 
 all_test_images = list(TEST_DIR.rglob("*.jpg"))
 all_test_names = [img.parent.name for img in all_test_images]
-MODEL_PATH = "models/trash_classifier_model_v1.keras"
+MODEL_PATH = "models/trash_classifier_model_v3.keras"
 
 def update():
     global all_test_images, all_test_names

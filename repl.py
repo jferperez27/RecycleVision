@@ -56,10 +56,10 @@ def get_model():
                 break
         else:
             break
-    print("Leave blank to use default model path 'models/trash_classifier_model_v1.keras'")
+    print("Leave blank to use default model path 'models/trash_classifier_model_v3.keras'")
     model_path = input("Enter the path to the model file: ").strip()
     if not model_path:
-        model_path = "models/trash_classifier_model_v1.keras"
+        model_path = "models/trash_classifier_model_v3.keras"
     if not Path(model_path).exists():
         print(f"Model file '{model_path}' does not exist.")
         return None
