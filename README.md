@@ -4,7 +4,9 @@
   using the [TrashNet dataset](https://huggingface.co/datasets/garythung/trashnet). This project includes dataset handling and preprocessing.
   Additionally, this project uses the TensorFlow library for model setup and creation, training, and refinement.
 
-  Current baseline: ~74% accuracy on test split.
+  ~~Current baseline: ~74% accuracy on test split.~~
+
+  Latest model (v3): **86% test accuracy** on held-out test set
   
 ## Features  
 - Dataset import via HuggingFace Hub
