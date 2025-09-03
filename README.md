@@ -36,9 +36,11 @@ Start the REPL and type `help` for commands.
 
 ## Screenshots
 Model Predictions
+
 <img width="640" height="480" alt="RecycleVision_prediction" src="https://github.com/user-attachments/assets/e13fb2dd-56da-4786-ab48-4e8cc5c049b5" />
 
 REPL Screenshot (First time loading program)
+
 <img width="771" height="361" alt="RecycleVision_REPL_example" src="https://github.com/user-attachments/assets/902b78b5-c015-4474-9ee3-539cfdae8c04" />
 
 ## Run Locally  
