@@ -10,7 +10,13 @@ all_test_images = list(TEST_DIR.rglob("*.jpg"))
 all_test_names = [img.parent.name for img in all_test_images]
 MODEL_PATH = "models/trash_classifier_model_v1.keras"
 
+def update():
+    global all_test_images, all_test_names
+    all_test_images = list(TEST_DIR.rglob("*.jpg"))
+    all_test_names = [img.parent.name for img in all_test_images]
+
 def load_model(model_path: str) -> keras.Model:
+    update()
     model = keras.models.load_model(model_path)
     return model
 
