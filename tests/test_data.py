@@ -42,7 +42,3 @@ def test_zip_fetch():
     for cls in CLASS_NAMES:
         assert (unzipped_dir / cls).exists() and (unzipped_dir / cls).is_dir()
         assert len(list((unzipped_dir / cls).glob("*"))) > 0
-
-# if __name__ == "__main__":
-#     test_prepare_data()
-#     test_zip_fetch()

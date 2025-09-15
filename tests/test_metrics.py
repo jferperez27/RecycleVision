@@ -14,5 +14,5 @@ def test_model_accuracy():
 
     model = keras.models.load_model(model_path)
     accuracy = model_accuracy(model, all_test_images, all_test_names, CLASS_NAMES)
-    assert 0.866 <= accuracy <= 1.0  # Accuracy should be between
+    assert 0.866 <= accuracy <= 1.0  # Accuracy should be between 86% - 100%
 

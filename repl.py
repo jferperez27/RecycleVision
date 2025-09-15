@@ -96,6 +96,7 @@ def run_inference():
                 continue
             model_inference(image_path)
 
+## holds all major functions for REPL
 REPL_COMMANDS = {
     "test": run_tests,
     "train": train_new_model,
@@ -104,6 +105,7 @@ REPL_COMMANDS = {
     "inference": run_inference,
 }
 
+## holds model to run tests/inference
 MEMORY = {
     "model": None
 }
@@ -142,8 +144,6 @@ def main():
         else:
             print(f"Unknown command: '{cmd}'. Type 'help' for a list of commands.")
         print("RecycleVision REPL environment. Type 'help' for commands. Type 'exit' to quit.")
-
-    pass
 
 if __name__ == "__main__":
     main()
